@@ -40,6 +40,11 @@ public class Player : Actor
             SetDirection(new Vector2(x, y));
         }
 
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+
         if(Input.GetMouseButton(0))
         {
             TryFire(_weapon0);
